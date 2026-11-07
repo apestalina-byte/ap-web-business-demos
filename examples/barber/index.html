@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#14120f">
+  <title>North Cut — барбершоп</title>
+  <style>
+    :root{--bg:#f3ede6;--paper:#f8f4ee;--text:#201913;--muted:#6f665d;--line:#d7cec3;--accent:#111111;--accent2:#b78652;--white:#fff}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;background:linear-gradient(180deg,#f4efe9,#f0e6db 45%,#efe8df 100%);color:var(--text)}a{text-decoration:none;color:inherit}img{max-width:100%;display:block}.shell{max-width:1180px;margin:auto;padding:0 20px}.header{position:sticky;top:0;z-index:30;background:rgba(244,239,233,.86);backdrop-filter:blur(14px);border-bottom:1px solid rgba(32,25,19,.08)}.nav{display:flex;justify-content:space-between;align-items:center;min-height:74px;gap:20px}.brand{font-size:24px;font-weight:900;letter-spacing:-.07em}.brand span{color:var(--accent2)}.nav-links{display:flex;gap:20px;flex-wrap:wrap}.nav-links a{font-size:14px;color:#413b35}.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 18px;border-radius:999px;font-size:14px;font-weight:800;transition:.25s}.btn:hover{transform:translateY(-2px)}.btn-primary{background:#181513;color:#fff;box-shadow:0 16px 36px rgba(24,21,19,.14)}.btn-secondary{background:#fff;border:1px solid var(--line);color:#1f1a15}.hero{padding:80px 0 56px;display:grid;grid-template-columns:1.02fr .98fr;gap:28px;align-items:center}.eyebrow{display:inline-flex;align-items:center;gap:10px;padding:8px 12px;border-radius:999px;border:1px solid var(--line);background:#ffffffa6;font-size:12px;color:#4d463f}.dot{width:8px;height:8px;border-radius:50%;background:var(--accent2);box-shadow:0 0 0 8px rgba(183,134,82,.12)}h1{font-size:clamp(42px,7vw,82px);line-height:.95;letter-spacing:-.08em;margin:16px 0 18px;max-width:10ch}.lead{font-size:18px;line-height:1.78;color:#5d554d;max-width:56ch}.hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:28px}.hero-meta{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:24px}.meta{padding:14px 16px;border-radius:18px;background:#fff;border:1px solid var(--line)}.meta b{display:block;font-size:22px;letter-spacing:-.05em}.meta span{font-size:12px;color:#6b6259;line-height:1.4}.visual{position:relative;min-height:600px;border-radius:34px;overflow:hidden;border:1px solid rgba(32,25,19,.08);box-shadow:0 25px 70px rgba(35,20,10,.12);background:url('https://images.unsplash.com/photo-1517832606299-7ae9b720a186?auto=format&fit=crop&w=1400&q=80') center/cover}.visual::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(33,28,24,.05),rgba(33,28,24,.55))}.panel{position:absolute;bottom:18px;left:18px;right:18px;padding:20px;border-radius:22px;background:rgba(255,250,244,.88);border:1px solid rgba(32,25,19,.08);backdrop-filter:blur(12px)}.panel h3{margin:0 0 10px;font-size:24px;letter-spacing:-.05em}.panel p{margin:0;color:#605850;line-height:1.65;font-size:14px}.section{padding:84px 0}.heading{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:26px}.heading h2{margin:0;font-size:clamp(30px,5vw,52px);letter-spacing:-.06em}.heading p{margin:0;max-width:46ch;color:#6b635a;line-height:1.75}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{padding:24px;border-radius:24px;background:rgba(255,255,255,.75);border:1px solid rgba(32,25,19,.09);box-shadow:0 16px 40px rgba(53,36,17,.06)}.card h3{margin:14px 0 8px;font-size:24px;letter-spacing:-.05em}.card p{margin:0;color:#665d55;line-height:1.72}.icon{width:52px;height:52px;border-radius:16px;display:grid;place-items:center;background:#efe2d3;color:#7f5b35;font-size:24px}.masters{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.master{overflow:hidden;border-radius:28px;background:#fff;border:1px solid var(--line);box-shadow:0 18px 50px rgba(43,33,24,.08)}.master img{width:100%;height:280px;object-fit:cover}.master-body{padding:18px 20px 22px}.master-body h3{margin:0 0 8px;font-size:24px;letter-spacing:-.05em}.master-body p{margin:0;color:#6c6259;line-height:1.65;font-size:14px}.pill-list{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}.pill-list span{padding:8px 10px;border-radius:999px;background:#f6efe7;border:1px solid var(--line);font-size:12px;color:#403830}.booking{display:grid;grid-template-columns:1.05fr .95fr;gap:18px}.booking-card,.booking-form{padding:28px;border-radius:28px;background:#fff;border:1px solid var(--line);box-shadow:0 18px 44px rgba(40,28,13,.07)}.service-picks{display:flex;gap:10px;flex-wrap:wrap;margin:16px 0 14px}.service-pick{padding:12px 14px;border-radius:999px;border:1px solid var(--line);background:#faf6f1;font-weight:700;font-size:13px;cursor:pointer;transition:.2s}.service-pick.active,.service-pick:hover{background:#211c18;color:#fff;border-color:#211c18}.field{display:grid;gap:8px;margin-bottom:14px}.field label{font-size:13px;font-weight:700;color:#312b26}.field input,.field textarea,.field select{width:100%;padding:14px 15px;border-radius:14px;border:1px solid var(--line);background:#fcfaf7;font:inherit;color:#221d18}.field textarea{resize:vertical;min-height:110px}.summary-box{padding:16px;border-radius:18px;background:#faf6f0;border:1px dashed #c8baa8;color:#4c433a;line-height:1.65;font-size:14px}.quote{padding:28px;border-radius:30px;background:#1f1a15;color:#f5efe7}.quote p{color:#e6daca;line-height:1.8}.faq details{border-top:1px solid rgba(32,25,19,.12)}.faq details:last-child{border-bottom:1px solid rgba(32,25,19,.12)}.faq summary{list-style:none;cursor:pointer;padding:22px 0;display:flex;justify-content:space-between;gap:20px;font-size:18px;font-weight:800}.faq summary::-webkit-details-marker{display:none}.faq p{margin:0 0 22px;color:#6a6158;line-height:1.75;max-width:70ch}.reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.review{padding:24px;border-radius:24px;background:#fff;border:1px solid var(--line);box-shadow:0 16px 36px rgba(40,26,14,.06)}.review b{display:block;font-size:18px;margin-bottom:10px}.review p{margin:0;color:#6c625a;line-height:1.78}.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}.reveal.show{opacity:1;transform:none}.footer{padding:30px 0 60px;color:#6b6259}.footer-box{padding-top:16px;border-top:1px solid rgba(32,25,19,.1);display:flex;justify-content:space-between;gap:18px;align-items:center}
+    .demo-disclosure{padding:10px 16px;text-align:center;background:#1c2533;color:#e7eef8;font:600 12px/1.6 Inter,system-ui,sans-serif}.demo-disclosure a{color:#90d4ff;text-decoration:underline;text-underline-offset:3px;margin-left:8px}
+    @media (max-width:980px){.hero,.booking{grid-template-columns:1fr}.grid3,.masters,.reviews{grid-template-columns:1fr 1fr}.visual{min-height:440px}}@media (max-width:760px){.nav{min-height:66px}.nav-links{display:none}.hero{padding-top:54px}.hero-meta,.grid3,.masters,.reviews{grid-template-columns:1fr}.heading{display:block}.heading p{margin-top:12px}}@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}.btn,.service-pick{transition:none}}
+  </style>
+</head>
+<body>
+  <div class="demo-disclosure" role="note">ДЕМО-ПРОЕКТ · Названия, цены, люди и примеры приведены для демонстрации. Это не действующий сервис. <a href="../../index.html">К каталогу демо ↗</a></div>
+  <header class="header">
+    <div class="shell nav">
+      <a class="brand" href="#top">North <span>Cut</span></a>
+      <nav class="nav-links"><a href="#services">Услуги</a><a href="#masters">Мастера</a><a href="#booking">Запись</a><a href="#faq">FAQ</a><a href="#contact">Контакты</a></nav>
+      <a class="btn btn-primary" href="#booking">Записаться ↗</a>
+    </div>
+  </header>
+  <main id="top">
+    <section class="shell hero">
+      <div>
+        <div class="eyebrow"><span class="dot"></span> Современный барбершоп в городском стиле</div>
+        <h1>Стрижка, к которой хочется возвращаться.</h1>
+        <p class="lead">Демонстрационный сайт для барбершопа или мужского салона. Он показывает атмосферу бренда, услуги, мастеров, ответы на частые вопросы и понятный сценарий записи.</p>
+        <div class="hero-actions"><a class="btn btn-primary" href="#booking">Выбрать услугу ↗</a><a class="btn btn-secondary" href="https://t.me/artem10p" target="_blank" rel="noopener">Telegram</a></div>
+        <div class="hero-meta"><div class="meta"><b>4.9</b><span>пример рейтинга клиентов</span></div><div class="meta"><b>35 мин</b><span>средняя мужская стрижка</span></div><div class="meta"><b>7/7</b><span>дней в неделю без выходных</span></div></div>
+      </div>
+      <div class="visual reveal"><div class="panel"><h3>Стильный бренд без перегруза</h3><p>Этот тип дизайна хорошо подходит барбершопам: сильная типографика, качественные фотографии, спокойные цвета, доверительные блоки и удобная запись.</p></div></div>
+    </section>
+
+    <section class="shell section reveal" id="services">
+      <div class="heading"><h2>Популярные услуги</h2><p>Вместо сухого прайса можно показать ключевые направления и помочь клиенту быстро понять, что ему подойдёт: стрижка, моделирование бороды или комплексный уход.</p></div>
+      <div class="grid3">
+        <article class="card"><div class="icon">✂️</div><h3>Мужская стрижка</h3><p>Классика, фейд, текстурные формы, подбор длины и укладка с учётом типа волос и образа клиента.</p></article>
+        <article class="card"><div class="icon">🪒</div><h3>Борода и контур</h3><p>Оформление бороды, усы, опасное бритьё и аккуратная работа с линиями для чистого результата.</p></article>
+        <article class="card"><div class="icon">🔥</div><h3>Комплексный уход</h3><p>Стрижка + борода + уходовые средства. Такой пакет хорошо продаётся через сайт и акции.</p></article>
+      </div>
+    </section>
+
+    <section class="shell section reveal" id="masters">
+      <div class="heading"><h2>Мастера, которым доверяют</h2><p>Для локального бизнеса важен не только прайс, но и лица команды. Этот блок помогает познакомить клиента с мастерами и снять напряжение перед первым визитом.</p></div>
+      <div class="masters">
+        <article class="master"><img src="https://images.unsplash.com/photo-1512690459411-b0fd1c86b8c8?auto=format&fit=crop&w=1200&q=80" alt="Мастер Алекс"><div class="master-body"><h3>Алекс</h3><p>Специалист по современным формам и средней длине. Делает аккуратный фейд и работает с текстурой.</p><div class="pill-list"><span>Фейд</span><span>Кроп</span><span>35–45 мин</span></div></div></article>
+        <article class="master"><img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=1200&q=80" alt="Мастер Дэн"><div class="master-body"><h3>Дэн</h3><p>Любит чистую геометрию, классические стрижки и точную работу с бородой и контуром.</p><div class="pill-list"><span>Классика</span><span>Борода</span><span>40–50 мин</span></div></div></article>
+        <article class="master"><img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=1200&q=80" alt="Мастер Рома"><div class="master-body"><h3>Рома</h3><p>Подбирает форму под тип волос и образ жизни. Хорошо работает с кудрями и густыми волосами.</p><div class="pill-list"><span>Кудри</span><span>Средняя длина</span><span>Подбор формы</span></div></div></article>
+      </div>
+    </section>
+
+    <section class="shell section reveal" id="booking">
+      <div class="booking">
+        <div class="booking-card">
+          <div class="heading" style="margin-bottom:14px;display:block"><h2 style="margin-bottom:12px">Удобная запись без перегруза</h2><p>Здесь можно показать сценарий выбора услуги, а затем отправить клиента в Telegram, WhatsApp или настоящую форму записи. Для демонстрации запись не отправляется автоматически.</p></div>
+          <div class="service-picks" id="servicePicks">
+            <button class="service-pick active" data-name="Мужская стрижка" data-price="1700">Мужская стрижка · 1 700 ₽</button>
+            <button class="service-pick" data-name="Стрижка + борода" data-price="2500">Стрижка + борода · 2 500 ₽</button>
+            <button class="service-pick" data-name="Оформление бороды" data-price="1200">Борода · 1 200 ₽</button>
+          </div>
+          <div class="summary-box" id="bookingSummary">Выбрана услуга: <strong>Мужская стрижка</strong>. Ориентировочная цена: <strong>1 700 ₽</strong>. Ниже клиент может оставить комментарий и перейти в Telegram с уже подготовленным сообщением.</div>
+        </div>
+        <form class="booking-form" id="bookingForm">
+          <div class="field"><label for="clientName">Имя</label><input id="clientName" placeholder="Например: Артём"></div>
+          <div class="field"><label for="visitTime">Удобное время</label><select id="visitTime"><option>Сегодня после 18:00</option><option>Завтра утром</option><option>Завтра вечером</option><option>На этой неделе — любое</option></select></div>
+          <div class="field"><label for="details">Комментарий</label><textarea id="details" placeholder="Хочу подобрать стрижку под форму лица и волосы"></textarea></div>
+          <button class="btn btn-primary" type="submit">Скопировать заявку и открыть Telegram ↗</button>
+          <p id="status" style="min-height:20px;color:#6d645c;font-size:13px;margin-top:12px"></p>
+        </form>
+      </div>
+    </section>
+
+    <section class="shell section reveal">
+      <div class="quote"><div class="heading" style="color:#fff"><h2 style="color:#fff">Почему такой сайт хорошо продаёт барбершоп</h2><p style="color:#dfd1c0">У клиента быстрый путь до действия: увидел атмосферу, познакомился с мастерами, выбрал услугу, оставил запрос. Такой сайт подходит как для таргета, так и для шапки профиля и карт.</p></div></div>
+    </section>
+
+    <section class="shell section reveal">
+      <div class="heading"><h2>Отзывы и впечатление</h2><p>В демонстрационном сайте отзывы могут быть нейтральными примерами структуры. В боевой версии сюда добавляются реальные тексты клиентов и ссылки на карты или соцсети.</p></div>
+      <div class="reviews">
+        <article class="review"><b>«Спокойный и дорогой визуал»</b><p>На таком сайте хочется задержаться: фотографии и структура создают ощущение профессионального места, а не случайной страницы.</p></article>
+        <article class="review"><b>«Понятно, куда нажимать»</b><p>Кнопки записи и блок выбора услуги ведут к действию без лишнего шума. Это особенно важно на мобильном.</p></article>
+        <article class="review"><b>«Легко адаптировать под бренд»</b><p>Меняются цвета, фото, цены, мастера и тексты — и демо быстро превращается в рабочий сайт для конкретного барбершопа.</p></article>
+      </div>
+    </section>
+
+    <section class="shell section faq reveal" id="faq">
+      <div class="heading"><h2>Вопросы клиентов</h2><p>FAQ можно адаптировать под реальные возражения: нужна ли запись, сколько длится процедура, можно ли прийти с фото-примером и т.д.</p></div>
+      <details><summary>Можно ли сделать похожий сайт для салона красоты? <span>+</span></summary><p>Да. Эта структура подходит не только барбершопу, но и салону мужского ухода, brow-студии или небольшому салону красоты с более мужским позиционированием.</p></details>
+      <details><summary>Можно подключить настоящую онлайн-запись? <span>+</span></summary><p>Да. В рабочей версии можно интегрировать форму, мессенджер, CRM или сервис записи. В демо это намеренно упрощено.</p></details>
+      <details><summary>Почему здесь нет большого каталога услуг? <span>+</span></summary><p>Для небольшого бизнеса лучше сначала показать главное: атмосферу, 3–6 ключевых услуг, мастеров и понятную запись. Это быстрее и эффективнее для продажи.</p></details>
+    </section>
+
+    <section class="shell section reveal" id="contact">
+      <div class="booking-card">
+        <div class="heading" style="display:block"><h2 style="margin-bottom:12px">Нужен похожий сайт для бизнеса?</h2><p>Этот макет можно использовать как основу проекта примерно за 9 900 ₽ с адаптацией под конкретный барбершоп или салон. Включаются фото, тексты, кнопки связи и мобильная версия.</p></div>
+        <div style="display:flex;gap:12px;flex-wrap:wrap"><a class="btn btn-primary" href="https://t.me/artem10p" target="_blank" rel="noopener">Написать @artem10p ↗</a><a class="btn btn-secondary" href="../../index.html">Ко всем демо</a></div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer shell"><div class="footer-box"><div>North Cut · демо-сайт для портфолио AP Web</div><a class="btn btn-secondary" href="https://t.me/artem10p" target="_blank" rel="noopener">Telegram @artem10p</a></div></footer>
+  <script>
+    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const reveal = new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')})},{threshold:.14});
+    document.querySelectorAll('.reveal').forEach(el=>reveal.observe(el));
+    let selectedName='Мужская стрижка', selectedPrice='1700';
+    const summary = document.getElementById('bookingSummary');
+    document.querySelectorAll('.service-pick').forEach(btn=>btn.addEventListener('click',()=>{
+      document.querySelectorAll('.service-pick').forEach(x=>x.classList.remove('active'));
+      btn.classList.add('active');
+      selectedName = btn.dataset.name; selectedPrice = btn.dataset.price;
+      summary.innerHTML = `Выбрана услуга: <strong>${selectedName}</strong>. Ориентировочная цена: <strong>${Number(selectedPrice).toLocaleString('ru-RU')} ₽</strong>. Ниже клиент может оставить комментарий и перейти в Telegram с уже подготовленным сообщением.`;
+    }));
+    document.getElementById('bookingForm').addEventListener('submit',async (e)=>{
+      e.preventDefault();
+      const name = document.getElementById('clientName').value.trim() || 'Клиент';
+      const time = document.getElementById('visitTime').value;
+      const details = document.getElementById('details').value.trim() || 'Хочу записаться';
+      const text = `Здравствуйте! Хочу записаться.\nУслуга: ${selectedName}.\nИмя: ${name}.\nКогда удобно: ${time}.\nКомментарий: ${details}.`;
+      window.open('https://t.me/artem10p','_blank','noopener,noreferrer');
+      const status = document.getElementById('status');
+      try{await navigator.clipboard.writeText(text);status.textContent='Текст скопирован. Вставьте его в чат @artem10p и отправьте.';}catch(err){status.textContent='Telegram открыт. Если текст не скопировался автоматически, отправьте сообщение вручную.';}
+    });
+  </script>
+</body>
+</html>

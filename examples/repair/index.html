@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f8fb">
+  <title>ДомПодКлюч — ремонт и отделка</title>
+  <style>
+    :root{--bg:#eff5f7;--paper:#ffffff;--ink:#13222d;--muted:#5f7281;--line:#d8e2ea;--accent:#1f6feb;--accent2:#1fbf83;--soft:#eaf3ff}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;color:var(--ink);background:linear-gradient(180deg,#f4f9fb,#eef4f8 42%,#f8fbfc 100%)}a{text-decoration:none;color:inherit}img{max-width:100%;display:block}.shell{max-width:1180px;margin:auto;padding:0 20px}.header{position:sticky;top:0;z-index:30;background:rgba(244,249,251,.88);backdrop-filter:blur(14px);border-bottom:1px solid rgba(19,34,45,.08)}.nav{display:flex;justify-content:space-between;align-items:center;min-height:74px;gap:20px}.brand{font-size:24px;font-weight:900;letter-spacing:-.06em}.brand span{color:var(--accent)}.nav-links{display:flex;gap:22px;flex-wrap:wrap}.nav-links a{font-size:14px;color:#456}.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 18px;border-radius:999px;font-size:14px;font-weight:800;transition:.25s}.btn:hover{transform:translateY(-2px)}.btn-primary{background:linear-gradient(135deg,var(--accent),#59a5ff);color:#fff;box-shadow:0 18px 40px rgba(31,111,235,.18)}.btn-secondary{border:1px solid var(--line);background:#fff;color:#1b2a35}.hero{padding:82px 0 56px;display:grid;grid-template-columns:1.02fr .98fr;gap:28px;align-items:center}.eyebrow{display:inline-flex;gap:10px;align-items:center;padding:8px 12px;border-radius:999px;background:#fff;border:1px solid var(--line);font-size:12px;color:#506372}.dot{width:8px;height:8px;border-radius:50%;background:var(--accent2);box-shadow:0 0 0 8px rgba(31,191,131,.11)}h1{font-size:clamp(42px,7vw,82px);line-height:.95;letter-spacing:-.08em;margin:16px 0 18px;max-width:11ch}.lead{font-size:18px;line-height:1.78;color:#566b7b;max-width:58ch}.hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:28px}.hero-points{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}.hero-points span{padding:10px 14px;border-radius:999px;background:#fff;border:1px solid var(--line);font-size:13px;color:#3d5667}.visual{position:relative;min-height:610px;border-radius:34px;overflow:hidden;border:1px solid rgba(19,34,45,.08);box-shadow:0 26px 70px rgba(27,49,69,.12);background:url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1400&q=80') center/cover}.visual::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(13,34,46,.02),rgba(13,34,46,.48))}.float-box{position:absolute;left:18px;right:18px;bottom:18px;display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.float-box article{padding:18px;border-radius:18px;background:rgba(255,255,255,.9);border:1px solid rgba(19,34,45,.08);backdrop-filter:blur(10px)}.float-box b{display:block;font-size:28px;letter-spacing:-.05em}.float-box span{font-size:12px;color:#566978;line-height:1.45}.section{padding:84px 0}.heading{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:28px}.heading h2{margin:0;font-size:clamp(30px,5vw,52px);letter-spacing:-.06em}.heading p{margin:0;max-width:46ch;color:#607282;line-height:1.75}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{padding:24px;border-radius:24px;background:#fff;border:1px solid var(--line);box-shadow:0 16px 44px rgba(28,45,60,.07)}.icon{width:52px;height:52px;border-radius:16px;display:grid;place-items:center;background:var(--soft);font-size:24px;color:var(--accent)}.card h3{margin:14px 0 8px;font-size:24px;letter-spacing:-.05em}.card p{margin:0;color:#617585;line-height:1.72}.cases{display:grid;grid-template-columns:1fr 1fr;gap:18px}.case{overflow:hidden;border-radius:28px;background:#fff;border:1px solid var(--line);box-shadow:0 18px 46px rgba(26,42,57,.08)}.case img{width:100%;height:270px;object-fit:cover}.case-body{padding:20px 22px 24px}.case-body h3{margin:0 0 8px;font-size:28px;letter-spacing:-.05em}.case-body p{margin:0 0 14px;color:#607181;line-height:1.7}.case-tags{display:flex;gap:8px;flex-wrap:wrap}.case-tags span{padding:8px 10px;border-radius:999px;background:#f4f8fb;border:1px solid var(--line);font-size:12px;color:#48606f}.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.step{padding:22px;border-radius:22px;background:#fff;border:1px solid var(--line);box-shadow:0 14px 32px rgba(27,44,61,.05)}.step strong{display:block;font-size:14px;color:var(--accent);margin-bottom:12px}.step h4{margin:0 0 10px;font-size:20px;letter-spacing:-.04em}.step p{margin:0;color:#607383;line-height:1.72;font-size:14px}.estimate{display:grid;grid-template-columns:1fr .95fr;gap:18px}.estimate-card,.estimate-form{padding:28px;border-radius:28px;background:#fff;border:1px solid var(--line);box-shadow:0 18px 46px rgba(27,44,61,.07)}.field{display:grid;gap:8px;margin-bottom:14px}.field label{font-size:13px;font-weight:700;color:#28404f}.field input,.field select,.field textarea{width:100%;padding:14px 15px;border-radius:14px;border:1px solid var(--line);background:#fbfdff;color:#213643;font:inherit}.field textarea{min-height:110px;resize:vertical}.result{padding:18px;border-radius:18px;background:#edf5ff;border:1px dashed #9dc0fb;color:#365369;line-height:1.7}.faq details{border-top:1px solid rgba(19,34,45,.12)}.faq details:last-child{border-bottom:1px solid rgba(19,34,45,.12)}.faq summary{list-style:none;cursor:pointer;padding:22px 0;display:flex;justify-content:space-between;gap:20px;font-size:18px;font-weight:800}.faq summary::-webkit-details-marker{display:none}.faq p{margin:0 0 22px;color:#617484;line-height:1.75;max-width:70ch}.contact-box{padding:28px;border-radius:28px;background:linear-gradient(135deg,#183e67,#0f2f4b);color:#eff7ff}.contact-box p{color:#d4e5f6;line-height:1.75}.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}.reveal.show{opacity:1;transform:none}.footer{padding:30px 0 60px;color:#607180}.footer-box{padding-top:16px;border-top:1px solid rgba(19,34,45,.1);display:flex;justify-content:space-between;gap:18px;align-items:center}
+    .demo-disclosure{padding:10px 16px;text-align:center;background:#1c2533;color:#e7eef8;font:600 12px/1.6 Inter,system-ui,sans-serif}.demo-disclosure a{color:#90d4ff;text-decoration:underline;text-underline-offset:3px;margin-left:8px}
+    @media (max-width:980px){.hero,.estimate,.cases{grid-template-columns:1fr}.grid3,.steps{grid-template-columns:1fr 1fr}.visual{min-height:470px}}@media (max-width:760px){.nav{min-height:66px}.nav-links{display:none}.hero{padding-top:54px}.hero-points,.grid3,.steps{display:grid;grid-template-columns:1fr}.float-box{grid-template-columns:1fr}.heading{display:block}.heading p{margin-top:12px}}@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}.btn{transition:none}}
+  </style>
+</head>
+<body>
+  <div class="demo-disclosure" role="note">ДЕМО-ПРОЕКТ · Названия, цены, люди и примеры приведены для демонстрации. Это не действующий сервис. <a href="../../index.html">К каталогу демо ↗</a></div>
+  <header class="header">
+    <div class="shell nav"><a class="brand" href="#top">Дом<span>ПодКлюч</span></a><nav class="nav-links"><a href="#services">Услуги</a><a href="#cases">Кейсы</a><a href="#estimate">Расчёт</a><a href="#faq">FAQ</a><a href="#contact">Контакты</a></nav><a class="btn btn-primary" href="#estimate">Рассчитать проект ↗</a></div>
+  </header>
+  <main id="top">
+    <section class="shell hero">
+      <div>
+        <div class="eyebrow"><span class="dot"></span> Ремонт квартир, отделка и комплектация</div>
+        <h1>Сайт, который продаёт доверие и понятный процесс.</h1>
+        <p class="lead">Демонстрационный сайт для ремонтной компании, студии отделки или частной бригады. В нём важны кейсы, ясные этапы, ориентир по цене и короткий путь до связи с клиентом.</p>
+        <div class="hero-actions"><a class="btn btn-primary" href="#estimate">Оставить задачу ↗</a><a class="btn btn-secondary" href="https://t.me/artem10p" target="_blank" rel="noopener">Telegram</a></div>
+        <div class="hero-points"><span>Договор и смета</span><span>Под ключ или частичные работы</span><span>Фото реальных объектов</span></div>
+      </div>
+      <div class="visual reveal"><div class="float-box"><article><b>80+</b><span>реализованных проектов в портфолио компании</span></article><article><b>4 этапа</b><span>понятный процесс от заявки до сдачи объекта</span></article><article><b>1 день</b><span>на первичный расчёт после заявки</span></article></div></div>
+    </section>
+
+    <section class="shell section reveal" id="services">
+      <div class="heading"><h2>Что можно показать на сайте</h2><p>Для ремонтной компании особенно важно объяснить структуру услуг и успокоить клиента: что именно вы делаете, как работаете, какие этапы и за что отвечает команда.</p></div>
+      <div class="grid3">
+        <article class="card"><div class="icon">🏠</div><h3>Ремонт квартир</h3><p>Косметический, капитальный, черновой и чистовой ремонт. Можно показать диапазоны стоимости и состав работ.</p></article>
+        <article class="card"><div class="icon">📐</div><h3>Дизайн и планирование</h3><p>Планировочные решения, подбор материалов, визуальная концепция и помощь в комплектации объекта.</p></article>
+        <article class="card"><div class="icon">🧰</div><h3>Отделка и монтаж</h3><p>Полы, стены, потолки, сантехника, электрика, освещение и финальная сборка пространства под ключ.</p></article>
+      </div>
+    </section>
+
+    <section class="shell section reveal" id="cases">
+      <div class="heading"><h2>Кейсы и примеры работ</h2><p>Лучший аргумент для клиента — показать не абстрактные обещания, а фотографии проектов, площадь, сроки и объём работ.</p></div>
+      <div class="cases">
+        <article class="case"><img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80" alt="Интерьер после ремонта"><div class="case-body"><h3>Квартира 58 м²</h3><p>Капитальный ремонт с перепланировкой, выравниванием поверхностей, новой электрикой и чистовой отделкой.</p><div class="case-tags"><span>Срок: 11 недель</span><span>58 м²</span><span>Под ключ</span></div></div></article>
+        <article class="case"><img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1200&q=80" alt="Современная кухня"><div class="case-body"><h3>Кухня-гостиная</h3><p>Обновление пространства с подбором света, отделки и мебели. Хороший пример для продвижения отдельных зон.</p><div class="case-tags"><span>Срок: 4 недели</span><span>Чистовая отделка</span><span>Комплектация</span></div></div></article>
+      </div>
+    </section>
+
+    <section class="shell section reveal">
+      <div class="heading"><h2>Путь клиента без хаоса</h2><p>Когда человек заходит на сайт ремонтной компании, ему нужно быстро понять: кто вы, какие работы берёте, есть ли реальные кейсы и как запросить ориентир по стоимости.</p></div>
+      <div class="steps"><article class="step"><strong>01</strong><h4>Заявка</h4><p>Короткий запрос, площадь, тип объекта и пожелания по ремонту.</p></article><article class="step"><strong>02</strong><h4>Оценка</h4><p>Предварительный расчёт и договорённость о замере или звонке.</p></article><article class="step"><strong>03</strong><h4>Смета</h4><p>Подробный список работ, материалов и этапов, если клиент заинтересован.</p></article><article class="step"><strong>04</strong><h4>Реализация</h4><p>Исполнение, фотоотчёты, контроль качества и сдача объекта.</p></article></div>
+    </section>
+
+    <section class="shell section reveal" id="estimate">
+      <div class="estimate">
+        <div class="estimate-card">
+          <div class="heading" style="display:block"><h2 style="margin-bottom:12px">Быстрый расчёт для сайта</h2><p>Такой блок помогает клиенту вовлечься и даёт ощущение ясности. Он не заменяет смету, но помогает получить первую заявку.</p></div>
+          <div class="field"><label for="objectType">Тип объекта</label><select id="objectType"><option value="5400">Квартира</option><option value="4600">Комната / студия</option><option value="6800">Офис</option><option value="7200">Коммерческое помещение</option></select></div>
+          <div class="field"><label for="area">Площадь, м²</label><input id="area" type="number" min="10" value="40"></div>
+          <div class="field"><label for="repairType">Тип ремонта</label><select id="repairType"><option value="1">Косметический</option><option value="1.45">Капитальный</option><option value="1.2">Чистовая отделка</option></select></div>
+          <button class="btn btn-primary" id="estimateBtn" type="button">Посчитать ориентир ↗</button>
+        </div>
+        <form class="estimate-form" id="estimateForm">
+          <div class="result" id="estimateResult">Выберите параметры слева и нажмите кнопку — здесь появится ориентировочная стоимость по площади. Затем можно отправить запрос в Telegram. Это демонстрация, а не коммерческая смета.</div>
+          <div class="field" style="margin-top:16px"><label for="company">Название компании</label><input id="company" placeholder="Например: Ремонт Пушкино"></div>
+          <div class="field"><label for="wish">Что важно показать на сайте?</label><textarea id="wish" placeholder="Например: услуги, кейсы, калькулятор, отзывы, кнопка связи"></textarea></div>
+          <button class="btn btn-primary" type="submit">Скопировать запрос и открыть Telegram ↗</button>
+          <p id="status" style="min-height:20px;font-size:13px;color:#617383;margin-top:12px"></p>
+        </form>
+      </div>
+    </section>
+
+    <section class="shell section faq reveal" id="faq">
+      <div class="heading"><h2>Вопросы и ответы</h2><p>FAQ помогает заранее закрывать типичные сомнения клиентов, особенно если они только сравнивают несколько подрядчиков.</p></div>
+      <details><summary>Можно ли адаптировать сайт под частную бригаду? <span>+</span></summary><p>Да. Этот шаблон подойдёт и для небольшой бригады, и для компании с более широким спектром услуг. Меняются тексты, кейсы, фото, цвета и акценты.</p></details>
+      <details><summary>Обязательно ли нужен калькулятор? <span>+</span></summary><p>Нет. Но такой блок повышает вовлечённость. Если не нужен калькулятор, можно оставить короткую форму заявки или кнопку консультации в Telegram.</p></details>
+      <details><summary>Подходит ли сайт для рекламы и карт? <span>+</span></summary><p>Да. Он адаптирован под мобильные устройства и содержит понятные CTA, поэтому хорошо работает как посадочная страница из рекламы или карточки компании.</p></details>
+    </section>
+
+    <section class="shell section reveal" id="contact">
+      <div class="contact-box">
+        <h2 style="margin-top:0;font-size:42px;letter-spacing:-.06em">Нужен похожий сайт для бизнеса?</h2>
+        <p>Этот демонстрационный проект можно использовать как основу для сайта ремонтной компании примерно за 9 900 ₽ с адаптацией под конкретные услуги, кейсы, бренд и контакты.</p>
+        <div style="display:flex;gap:12px;flex-wrap:wrap"><a class="btn btn-primary" href="https://t.me/artem10p" target="_blank" rel="noopener">Написать @artem10p ↗</a><a class="btn btn-secondary" href="../../index.html">Ко всем демо</a></div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer shell"><div class="footer-box"><div>ДомПодКлюч · демо-сайт для портфолио AP Web</div><a class="btn btn-secondary" href="https://t.me/artem10p" target="_blank" rel="noopener">Telegram @artem10p</a></div></footer>
+  <script>
+    const reveal = new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')})},{threshold:.14});
+    document.querySelectorAll('.reveal').forEach(el=>reveal.observe(el));
+    document.getElementById('estimateBtn').addEventListener('click',()=>{
+      const base = Number(document.getElementById('objectType').value);
+      const area = Number(document.getElementById('area').value || 0);
+      const factor = Number(document.getElementById('repairType').value);
+      const total = Math.round(base * area * factor);
+      document.getElementById('estimateResult').innerHTML = `<strong>Ориентировочная стоимость: от ${total.toLocaleString('ru-RU')} ₽.</strong><br>Расчёт выполнен для демонстрации интерфейса. Для настоящего сайта можно настроить более точную форму, этапы, пакетные предложения и отправку заявки.`;
+    });
+    document.getElementById('estimateForm').addEventListener('submit',async (e)=>{
+      e.preventDefault();
+      const company = document.getElementById('company').value.trim() || 'Строительная компания';
+      const wish = document.getElementById('wish').value.trim() || 'Нужен сайт для ремонта';
+      const text = `Здравствуйте! Хочу сайт для бизнеса.\nНиша: ремонт и отделка.\nКомпания: ${company}.\nЗадача: ${wish}.\nПодскажите стоимость и сроки.`;
+      window.open('https://t.me/artem10p','_blank','noopener,noreferrer');
+      const status = document.getElementById('status');
+      try{await navigator.clipboard.writeText(text);status.textContent='Текст скопирован. Вставьте его в чат @artem10p и отправьте.';}catch(err){status.textContent='Telegram открыт. Если текст не скопировался, отправьте описание проекта вручную.';}
+    });
+  </script>
+</body>
+</html>

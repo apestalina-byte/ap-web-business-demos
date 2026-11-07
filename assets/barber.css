@@ -1,9 +1,454 @@
-:root{--navmobile:#f1ede5;--bone:#f1ede5;--ink:#292620;--sub:#756e63;--accent:#8c503c;--rule:#d5cfc5}
-body.barber{background:var(--bone);color:var(--ink)}.barber .site-header{background:var(--bone);border-bottom:1px solid var(--rule)}.barber .brand-name{font-family:Georgia,serif;font-weight:400;letter-spacing:-.07em}.barber .brand-meta{color:#857c71}.barber .header-cta{border-bottom:1px solid var(--ink);padding-bottom:6px}.barber .btn-ink{background:var(--ink);color:#fff}.barber .btn-ghost{border-color:var(--ink);color:var(--ink)}.barber .btn-ink:hover{background:var(--accent)}.barber .small-caps{color:var(--accent)}
-.barber-hero{border-bottom:1px solid var(--rule)}.barber-hero-top{display:flex;justify-content:space-between;align-items:center;padding-top:30px;padding-bottom:24px;border-bottom:1px solid var(--rule)}.barber-hero-top span{color:#776d62}.barber-hero-grid{display:grid;grid-template-columns:47% 53%;min-height:650px}.barber-hero-photo{height:650px;background:#c2ac96}.barber-hero-photo img{height:100%;object-fit:cover;filter:saturate(.74) contrast(1.04)}.barber-hero-copy{padding:64px 0 54px min(7vw,92px);display:flex;flex-direction:column;justify-content:space-between}.barber-hero-copy h1{font-family:Georgia,serif;font-size:clamp(64px,6.7vw,104px);font-weight:400;line-height:.97;letter-spacing:-.075em;margin:10px 0 27px}.barber-hero-copy h1 em{font-style:italic;color:var(--accent)}.barber-hero-copy p{font-size:17px;line-height:1.8;max-width:400px;color:#625b53}.barber-hero-copy .actions{display:flex;gap:24px;align-items:center;flex-wrap:wrap;margin-top:28px}.barber-hero-bottom{border-top:1px solid var(--rule);padding-top:15px;display:flex;justify-content:space-between;gap:15px;font-size:12px;color:#756e62}
-.barber-services{display:grid;grid-template-columns:1fr 1.2fr;gap:64px}.barber-services-head h2{font-family:Georgia,serif;font-size:clamp(48px,5vw,75px);font-weight:400;letter-spacing:-.065em;line-height:1.03;margin:15px 0 24px}.barber-services-head p{font-size:15px;line-height:1.8;color:var(--sub);max-width:370px}.barber-price-row{border-bottom:1px solid var(--rule);padding:25px 0;display:grid;grid-template-columns:1fr 150px;gap:10px}.barber-price-row:first-child{border-top:1px solid var(--rule)}.barber-price-row h3{font-size:20px;letter-spacing:-.04em;margin:0 0 7px;font-weight:650}.barber-price-row p{font-size:13px;line-height:1.55;color:var(--sub);margin:0}.barber-price-row strong{text-align:right;font-size:17px;font-weight:650}.barber-price-note{font-size:12px;line-height:1.6;color:#776b60;margin-top:18px}
-.barber-image-section{padding:0 0 115px}.barber-image-grid{display:grid;grid-template-columns:1.34fr .66fr;gap:16px}.barber-large-shot{height:620px;background:#a49280}.barber-secondary-shot{height:620px;background:#8c806e}.barber-image-grid img{filter:saturate(.7)}.barber-image-grid .photo-credit{left:18px;right:auto}.barber-image-head{display:flex;justify-content:space-between;gap:20px;align-items:end;padding:23px 0 35px}.barber-image-head h2{font-family:Georgia,serif;font-weight:400;font-size:clamp(40px,4vw,62px);letter-spacing:-.06em;margin:0}.barber-image-head p{max-width:340px;font-size:14px;line-height:1.7;color:var(--sub);margin:0}
-.barber-book{padding:110px 0;background:#e6ded2}.barber-book-grid{display:grid;grid-template-columns:.88fr 1.12fr;gap:65px}.barber-book-left h2{font-family:Georgia,serif;font-weight:400;line-height:1.02;font-size:clamp(47px,5vw,78px);letter-spacing:-.06em;margin:15px 0 25px}.barber-book-left p{font-size:15px;line-height:1.85;color:var(--sub);max-width:370px}.barber-form{border:1px solid #c3b7a8;background:#f8f5ef;padding:36px}.barber-form h3{font-family:Georgia,serif;font-weight:400;font-size:27px;margin:0 0 19px}.service-picker{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin:17px 0 20px}.service-picker button{padding:14px 12px;text-align:left;border:1px solid #bdb4a6;background:transparent;color:var(--ink);font-size:13px;line-height:1.4;min-height:58px}.service-picker button.is-selected{background:var(--ink);color:#fff;border-color:var(--ink)}.service-picker button:hover{border-color:var(--ink)}.barber-form .two{display:grid;grid-template-columns:1fr 1fr;gap:12px}.barber-form .field select,.barber-form .field input{background:#fff}.barber-selection{font-size:13px;color:#4b4038;border-top:1px solid #d7cec3;padding:16px 0;margin-top:18px}.barber-form .btn{width:100%;justify-content:space-between}.barber-quote{background:#2e2a25;color:#f1eadf;padding:85px 0}.barber-quote-grid{display:grid;grid-template-columns:1fr 1fr;gap:52px;align-items:center}.barber-quote p{font-family:Georgia,serif;font-size:clamp(32px,3.4vw,48px);line-height:1.2;letter-spacing:-.04em;margin:0}.barber-quote small{font-size:14px;line-height:1.85;color:#c5bbb0;max-width:420px;display:block}.barber-faq{padding-top:94px;padding-bottom:94px}.barber-faq .faq{max-width:850px;margin-left:auto;margin-top:40px}.barber .site-footer{background:#e6ded2;color:var(--ink)}
-@media(max-width:990px){.barber-hero-grid{grid-template-columns:45% 55%}.barber-hero-copy{padding-left:36px}.barber-services{gap:30px}.barber-book-grid{gap:30px}.barber-large-shot,.barber-secondary-shot{height:430px}}
-@media(max-width:760px){.barber-hero-grid{grid-template-columns:1fr}.barber-hero-photo{height:380px}.barber-hero-copy{padding:43px 0 34px;min-height:450px}.barber-hero-copy h1{font-size:clamp(65px,14vw,88px)}.barber-services,.barber-book-grid,.barber-quote-grid{grid-template-columns:1fr}.barber-services{gap:30px}.barber-image-section{padding-bottom:65px}.barber-image-grid{grid-template-columns:1.2fr .8fr;gap:9px}.barber-large-shot,.barber-secondary-shot{height:310px}.barber-image-head{display:block}.barber-image-head p{margin-top:14px}.barber-book{padding:65px 0}.barber-quote{padding:60px 0}.barber-faq{padding-top:65px;padding-bottom:65px}}
-@media(max-width:460px){.barber-hero-photo{height:290px}.barber-hero-copy{min-height:405px}.barber-hero-copy h1{font-size:clamp(59px,15vw,77px)}.barber-hero-bottom{flex-direction:column}.barber-price-row{grid-template-columns:1fr auto}.barber-price-row strong{font-size:15px}.barber-image-grid{grid-template-columns:1fr}.barber-large-shot{height:330px}.barber-secondary-shot{height:190px}.barber-form{padding:19px}.barber-form .two{grid-template-columns:1fr}.service-picker{grid-template-columns:1fr}}
+.barber {
+  --paper: #f4efe5;
+  --ink: #332b24;
+  --muted: #65584b;
+  --line: #d7cdbd;
+  --accent: #885b3b;
+  --button: #3e3026;
+  --navmobile: #f4efe5;
+  background: var(--paper);
+}
+.barber .brand-name {
+  font-family: Georgia, serif;
+  font-size: 37px;
+  letter-spacing: -0.06em;
+  font-weight: 400;
+}
+.barber .brand-name span {
+  font-family: Arial, sans-serif;
+  font-size: 10px;
+  vertical-align: top;
+  margin-left: 5px;
+}
+.barber .brand-meta {
+  max-width: 100px;
+}
+.barber-hero {
+  display: grid;
+  grid-template-columns: 1fr 1.03fr;
+  gap: 70px;
+  padding-block: 40px 50px;
+  min-height: 650px;
+}
+.barber-hero-copy {
+  padding-top: 52px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.barber h1 {
+  font-family: Georgia, serif;
+  letter-spacing: -0.055em;
+  line-height: 1.07;
+  font-size: clamp(48px, 5.5vw, 85px);
+  font-weight: 400;
+  margin: 26px 0;
+}
+.barber h1 em {
+  color: #936a49;
+}
+.barber-hero-copy > p {
+  font-size: 14px;
+  line-height: 1.9;
+  color: var(--muted);
+  margin-bottom: 32px;
+}
+.barber-hero-copy > .btn {
+  min-width: 210px;
+}
+.barber-bottom {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  font-size: 9px;
+  margin-top: auto;
+  padding-top: 30px;
+  border-top: 1px solid var(--line);
+}
+.barber-bottom > a {
+  font-size: 11px;
+}
+.barber-hero-picture {
+  height: 580px;
+  position: relative;
+}
+.barber-hero-picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.vertical-label {
+  position: absolute;
+  right: 14px;
+  top: 18px;
+  writing-mode: vertical-rl;
+  letter-spacing: 0.2em;
+  font-size: 10px;
+  color: white;
+}
+.barber h2 {
+  font-family: Georgia, serif;
+  font-weight: 400;
+  letter-spacing: -0.04em;
+  line-height: 1.15;
+}
+.barber h2 em {
+  color: #8a6246;
+}
+.barber-price-layout {
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  gap: 90px;
+}
+.barber-price-layout h2 {
+  font-size: 43px;
+  margin: 20px 0 24px;
+}
+.barber-price-layout > div > p {
+  max-width: 330px;
+  font-size: 14px;
+  color: var(--muted);
+  margin-bottom: 25px;
+}
+.price-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+  padding: 25px 0;
+  border-bottom: 1px solid var(--line);
+}
+.price-row:first-child {
+  border-top: 1px solid var(--line);
+}
+.price-row h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+.price-row p {
+  font-size: 12px;
+  color: var(--muted);
+}
+.price-row > div:last-child {
+  text-align: right;
+  white-space: nowrap;
+}
+.price-row strong {
+  font-weight: 500;
+  font-size: 18px;
+}
+.price-row small {
+  display: block;
+  font-size: 11px;
+  color: var(--muted);
+  margin-top: 10px;
+}
+.price-row:hover h3 {
+  color: var(--accent);
+}
+.barber-atmosphere {
+  background: #e4dacb;
+}
+.wide-photo {
+  height: 440px;
+  position: relative;
+  overflow: hidden;
+}
+.wide-photo img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center 55%;
+}
+.atmosphere-caption {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 35px;
+  gap: 35px;
+}
+.atmosphere-caption h2 {
+  font-size: 39px;
+}
+.atmosphere-caption p {
+  font-size: 13px;
+  color: var(--muted);
+}
+.masters-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 42px;
+}
+.master-profile {
+  border-top: 1px solid var(--line);
+  padding: 28px 0;
+  display: flex;
+  gap: 28px;
+}
+.master-monogram {
+  font-family: Georgia, serif;
+  font-size: 70px;
+  min-width: 110px;
+  min-height: 170px;
+  display: grid;
+  place-items: center;
+  background: #e9dfcf;
+  color: #8a6e51;
+}
+.master-profile h3 {
+  font-family: Georgia, serif;
+  font-size: 28px;
+  font-weight: 400;
+  margin: 10px 0;
+}
+.master-profile p {
+  font-size: 13px;
+  max-width: 280px;
+  color: var(--muted);
+  margin-bottom: 15px;
+}
+.barber-gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 18px;
+}
+.barber-gallery .gallery-photo {
+  height: 420px;
+}
+.booking-section {
+  padding: 95px 0;
+  background: #e7ddce;
+}
+.booking-grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 100px;
+}
+.booking-grid h2 {
+  font-size: 62px;
+  margin: 23px 0;
+}
+.booking-grid > div > p {
+  max-width: 350px;
+  font-size: 14px;
+  color: var(--muted);
+}
+.booking-warning {
+  margin-top: 30px !important;
+  padding: 20px 0;
+  border-top: 1px solid #c6b7a0;
+  font-weight: 700;
+  max-width: 330px !important;
+}
+.barber .form-panel {
+  background: #f7f3eb;
+}
+.slots {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+}
+.slots button {
+  background: transparent;
+  border: 1px solid #bcae9a;
+  min-height: 44px;
+  font-size: 12px;
+}
+.slots button[aria-pressed="true"] {
+  background: var(--ink);
+  color: var(--paper);
+}
+.slots button:disabled {
+  opacity: 0.45;
+  text-decoration: line-through;
+  cursor: not-allowed;
+}
+.booking-result {
+  border: 1px solid #a6ae8d;
+  background: #edf0e4;
+  color: #34402b;
+  font-size: 13px;
+  padding: 16px;
+  line-height: 1.8;
+}
+.barber-contact {
+  padding: 50px 0 70px;
+  text-align: center;
+  border-top: 1px solid var(--line);
+}
+.barber-contact h2 {
+  font-size: 62px;
+  margin: 20px 0;
+}
+.barber-contact p {
+  font-size: 13px;
+  color: var(--muted);
+}
+.barber-contact a {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.barber .site-footer {
+  background: #e7ddce;
+}
+@media (max-width: 1100px) {
+  .barber-hero {
+    gap: 35px;
+    min-height: 570px;
+  }
+  .barber-hero-picture {
+    height: 520px;
+  }
+  .barber-hero-copy {
+    padding-top: 35px;
+  }
+  .barber h1 {
+    font-size: 55px;
+  }
+  .barber-price-layout {
+    gap: 40px;
+  }
+  .barber-price-layout h2 {
+    font-size: 35px;
+  }
+  .booking-grid {
+    gap: 40px;
+  }
+  .master-monogram {
+    min-width: 80px;
+    font-size: 50px;
+  }
+  .master-profile {
+    gap: 18px;
+  }
+  .barber-gallery .gallery-photo {
+    height: 330px;
+  }
+}
+@media (max-width: 760px) {
+  .barber-hero {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    padding-top: 0;
+    min-height: 0;
+    padding-bottom: 0;
+  }
+  .barber-hero-copy {
+    padding-top: 35px;
+  }
+  .barber h1 {
+    font-size: clamp(43px, 11.5vw, 72px);
+    margin: 22px 0;
+  }
+  .barber-hero-copy > p {
+    font-size: 13px;
+    margin-bottom: 25px;
+  }
+  .barber-bottom {
+    margin-top: 29px;
+    padding-top: 20px;
+  }
+  .barber-hero-picture {
+    height: 360px;
+  }
+  .barber-hero-picture img {
+    object-position: center 37%;
+  }
+  .barber-price-layout,
+  .masters-grid,
+  .booking-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .barber-price-layout h2 {
+    font-size: 35px;
+  }
+  .price-row {
+    padding: 21px 0;
+  }
+  .wide-photo {
+    height: 290px;
+  }
+  .atmosphere-caption {
+    display: block;
+    padding-block: 27px;
+  }
+  .atmosphere-caption h2 {
+    font-size: 33px;
+    margin-bottom: 18px;
+  }
+  .master-profile {
+    gap: 24px;
+  }
+  .master-monogram {
+    min-width: 100px;
+    min-height: 150px;
+    font-size: 60px;
+  }
+  .masters-grid {
+    gap: 0;
+  }
+  .barber-gallery {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  .barber-gallery .gallery-photo {
+    height: 260px;
+  }
+  .barber-gallery .gallery-photo:last-child {
+    grid-column: 1/-1;
+    height: 240px;
+  }
+  .booking-section {
+    padding: 62px 0;
+  }
+  .booking-grid h2 {
+    font-size: 47px;
+  }
+  .booking-warning {
+    margin-top: 23px !important;
+  }
+  .barber-contact {
+    padding: 35px 0 60px;
+  }
+  .barber-contact h2 {
+    font-size: 43px;
+  }
+  .barber .section-head h2 {
+    font-size: 35px;
+  }
+}
+@media (max-width: 390px) {
+  .barber .brand-name {
+    font-size: 32px;
+  }
+  .slots {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .price-row {
+    gap: 12px;
+  }
+  .price-row h3 {
+    font-size: 16px;
+  }
+  .price-row p {
+    font-size: 11px;
+  }
+  .price-row strong {
+    font-size: 16px;
+  }
+  .barber-hero-picture {
+    height: 300px;
+  }
+  .master-monogram {
+    min-width: 75px;
+  }
+  .barber-gallery .gallery-photo {
+    height: 210px;
+  }
+}
+.vertical-label {
+  background: #29251f;
+  padding: 8px 5px;
+}

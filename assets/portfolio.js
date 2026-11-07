@@ -1,0 +1,1 @@
+/* Portfolio uses shared navigation and accessible gallery code. */
